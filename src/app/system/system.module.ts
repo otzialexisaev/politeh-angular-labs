@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import { SystemComponent } from './system.component';
 import {HomeComponent} from "../home/home.component";
 import {ContactComponent} from "../contact/contact.component";
+import {SystemRoutingModule} from "./system-routing.module";
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {ContactComponent} from "../contact/contact.component";
     ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SystemRoutingModule
   ],
   providers: [],
   bootstrap: [SystemComponent]
