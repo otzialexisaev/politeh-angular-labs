@@ -3,6 +3,7 @@ body {
   background-color: #edeef0;
   width: 60%;
   min-width: 800px;
+  max-width: 1200px;
   margin: auto;
 }
 
