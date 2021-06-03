@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  items: string[] = ['Параметр 1', 'Параметр 2', 'Параметр 3', 'Параметр 4'];
+  items: string[] = [];
+  toAdd: string = "";
   condition: boolean = true;
   toggle() {
     this.condition = !this.condition;
+  }
+  addItem() {
+    if (this.toAdd !== "") {
+      this.items.push(this.toAdd);
+    }
   }
 }

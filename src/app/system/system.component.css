@@ -1,0 +1,12 @@
+.block {
+  background-color: white;
+}
+
+.radBorder {
+  border: 5px solid gainsboro;
+  border-radius: 5px;
+}
+
+main, footer {
+  padding: 15px;
+}

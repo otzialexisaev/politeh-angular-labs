@@ -1,11 +1,10 @@
 <div class="left">
-  <button (click)="toggle()">Скрыть параметры</button>
+  <button class="pure-button" (click)="toggle()">Скрыть пункты</button>
   <div *ngIf="condition">
     <ul>
       <li *ngFor="let item of items">{{item}}</li>
     </ul>
   </div>
 </div>
-
-<input type="text" [(ngModel)]="items"><br>
-<input type="text" [(ngModel)]="items">
+<input type="text" [(ngModel)]="toAdd">
+<button class="pure-button" (click)="addItem()">Добавить пункт</button>
